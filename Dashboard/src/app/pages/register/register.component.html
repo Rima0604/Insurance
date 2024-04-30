@@ -1,0 +1,35 @@
+<div class="lg:w-3/12 mt-2 p-10 shadow-lg mx-auto">
+    <h3 class="text-3xl text-center font-semibold py-5">Register</h3>
+    <form [formGroup]="registerForm" class="flex flex-col">
+        <div class="flex flex-col mt-4 mb-1">
+            <input formControlName="FirstName" class="p-2 border border-gray-300 rounded" type="text" placeholder="FirstName">
+            <span  *ngIf="registerForm.hasError('required','FirstName') && registerForm.controls['FirstName'].dirty" 
+            class="text-red-500">*FirstName is required</span>
+        </div>
+        <div class="flex flex-col  mt-4 mb-1">
+            <input formControlName="LastName" class="p-2 border border-gray-300 rounded" type="text" placeholder="LastName">
+            <span *ngIf="registerForm.hasError('required','LastName') && registerForm.controls['LastName'].dirty" 
+            class="text-red-500">*LastName is required</span>
+        </div>
+        <div class="flex flex-col  mt-4 mb-1">
+            <input formControlName="UserName" class="p-2 border border-gray-300 rounded" type="text" placeholder="UserName">
+            <span *ngIf="registerForm.hasError('required','UserName') && registerForm.controls['UserName'].dirty" 
+            class="text-red-500">*UserName is required</span>
+        </div>
+        <div class="flex flex-col  mt-4 mb-1">
+            <input formControlName="Email" class="p-2 border border-gray-300 rounded" type="text" placeholder="Email">
+            <span *ngIf="registerForm.hasError('required','Email') && registerForm.controls['Email'].dirty" 
+            class="text-red-500">*Email is required</span>
+        </div>
+        <div class="flex flex-col  mt-4 mb-1">
+            <input formControlName="Password" class="p-2 border border-gray-300 rounded" type="password" placeholder="Password">
+            <span *ngIf="registerForm.hasError('required','Password') && registerForm.controls['Password'].dirty" 
+            class="text-red-500">*Password is required</span>
+        </div>
+        <button [disabled]="registerForm.invalid" [class.disabled]="registerForm.invalid" (click)="register()" 
+        class="bg-indigo-500 p-2 rounded mt-3 text-white">Submit</button>
+        <div class="flex justify-center mt-5">
+        <span>Already Have Account</span><a routerLink="/login" class="text-indigo-500 ml-2 cursor-pointer">Login Here</a>
+        </div>
+    </form>
+</div>

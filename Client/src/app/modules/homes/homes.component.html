@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Insurance</title>
+</head>
+
+<body>
+
+    <div class="images">
+        <img src="/assets/images/Understand-Life-Insurance-Illustration.png" alt=" home">
+    </div>
+
+    <div class="container">
+
+        <div class="slider"></div>
+        <div class="btn">
+            <h2 class="text-center text-1xl text-gray-700 font-bold sm:text-2xl">Health Insurance</h2>
+        </div>
+   
+        <form [formGroup]="homeForm" id="form1">
+        <div class="form-section">
+            <div class="health-box">
+                <div class="tab" id="tab-1"> <label for="name">Year Of Constuction:</label>
+                    <input type="text" formControlName="Name" class="name ele" placeholder="Enter Your Full Name">
+                    <label for="age">Gross area (sqm):</label>
+                    <input type="text" formControlName="area" class="age ele" placeholder="Enter Your gross area">
+                    <label for="phone">Age oldest pipe:</label>
+                    <input type="text"  formControlName="pipe" class="pipe ele" placeholder="Enter Your oldest pipe">
+                    <label for="phone">Age oldest Electrical:</label>
+                    <input type="text"  formControlName="electrical" class="electrical ele" placeholder="Enter Your oldest Electrical ">
+                    <label for="phone">Does the home have a basement?</label>
+                    <input type="text"  formControlName="basement?" class="basement? ele" placeholder="Yes/No">
+                    <div class="text-center">
+                        <button (click)="next()"  type="submit" class="clkbtn">Next </button>
+                        </div>
+                </div>
+                </div>
+        </div>
+            </form>
+
+            <form [formGroup]="homeForm" id="form2">
+                <div class="form-section">
+                    <div class="health-box">
+       
+                <div class="tab" id="tab-2"><label for="phone">Is the basement furnished?</label>
+                    <input type="text"  formControlName="furnished" class="furnished ele" placeholder="Yes/No">
+                    <label for="phone">Gross area garage (sqm):</label>
+                    <input type="text"  formControlName="garage" class="garage ele" placeholder="Enter Your area garage">
+                    <label for="phone">Gross outbuilding area (sqm):</label>
+                    <input type="text"  formControlName="outbuilding" class="outbuilding ele" placeholder="Enter Your outbuilding area">
+                    <label for="phone">Gross area other building (sqm)</label>
+                    <input type="text"  formControlName="building" class="building ele" placeholder="Enter Your other building">
+                    <div class="text-center">
+                        <button  type="submit" class="clkbtn">Previous </button>
+                        <button (click)="onSubmit()" type="submit" class="clkbtn">Submit</button>
+                        </div>
+                </div>
+            </div>
+            </div>
+
+            </form> 
+            </div>
+</body>
+
+</html>

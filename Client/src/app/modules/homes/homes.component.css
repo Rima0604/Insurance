@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.images{
+    width: 600px; 
+    height: 500px;
+    border-radius: 8px; 
+    margin-right: 700px;
+    position: absolute;
+    margin-top: 40px;
+    align-items: first baseline;
+}
+
+.container {
+    height: 600px;
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    margin-left: 800px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 8px 8px 8px rgb(131, 133, 135);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.btn {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.health.details,
+.customer.details {
+    background-image: linear-gradient(to right,
+	rgb(87, 146, 218),
+	rgb(45, 206, 221));
+    color: white;
+    padding: 10px 15px;
+    border: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    background-color: transparent;
+    position: relative;
+    box-shadow: 8px 8px 8px rgb(131, 133, 135);
+}
+
+.form-section {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.health-box {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+#bdate{
+    font-weight: normal;
+}
+
+.ele,
+select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.clkbtn {
+    background-image: linear-gradient(to right,
+	rgb(87, 146, 218),
+	rgb(45, 206, 221));
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 8px 8px 8px rgb(131, 133, 135);
+}
+
+.clkbtn:hover {
+    background-color: #319fe9;
+}
+
+#form2{
+    left: -450px;
+}

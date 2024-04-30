@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.images{
+  width: 600px; 
+  height: 400px;
+  border-radius: 8px; 
+  margin-right: 700px;
+  position: absolute;
+  margin-top: 20px;
+  align-items: first baseline;
+}
+
+.container {
+  height: 500px;
+  width: 450px;
+  margin: 20px auto;
+  padding: 20px;
+  margin-left: 800px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 8px 8px 8px rgb(131, 133, 135);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.travel.details,
+.customer.details {
+  background-image: linear-gradient(to right,
+	rgb(87, 146, 218),
+	rgb(45, 206, 221));
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+  box-shadow: 8px 8px 8px rgb(131, 133, 135);
+}
+
+.form-section {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.travel-box {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.ele,
+#sdate,
+#endate {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.clkbtn {
+  background-image: linear-gradient(to right,
+	rgb(87, 146, 218),
+	rgb(45, 206, 221));
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 8px 8px 8px rgb(131, 133, 135);
+}
+
+.clkbtn:hover {
+  background-color: #3c8fe7;
+}

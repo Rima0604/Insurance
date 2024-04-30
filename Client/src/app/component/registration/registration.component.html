@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--<link rel="stylesheet" href="style.css">-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Registration</title>
+</head>
+<body>
+	<div class="container" id="container">
+		<div class="form-container log-in-container">
+			<form [formGroup]="registrationform">
+			<h1>Registration</h1>
+				<div class="social-container">
+					<a href="#" class="social"><i class="fa fa-facebook fa-2x"></i></a>
+					<a href="#" class="social"><i class="fab fa fa-twitter fa-2x"></i></a>
+				</div>
+				<span>or use your account</span>
+                <input formControlName="FirstName" type="text" placeholder="Enter your  FirstName" formcontrolName="FirstName"/>
+				<div *ngIf="registrationform.hasError('required', 'FirstName') && registrationform.controls['FirstName'].dirty" class="required" >*FirstName is required.</div>
+
+				<input formControlName="LastName" type="text" placeholder="Enter your LastName" formcontrolName="LastName"/>
+				<div *ngIf="registrationform.hasError('required', 'LastName') && registrationform.controls['LastName'].dirty" class="required">*LastName is required.</div>
+                
+				<input formControlName="UserName" type="UserName" placeholder="Enter your UserName" formcontrolName="UserName"/>
+				<div *ngIf="registrationform.hasError('required', 'UserName') && registrationform.controls['UserName'].dirty" class="required">*UserNamenumber is required.</div>
+				
+				<input formControlName="Email" type="email" placeholder="Email" formcontrolName="email"/>
+				<div *ngIf="registrationform.hasError('required', 'Email') && registrationform.controls['Email'].dirty" class="required">*email is required.</div>
+				<div *ngIf="registrationform.hasError('email', 'Email')" class="required">*email is Invalid </div>
+
+				<input formControlName="Password" type="password" placeholder="Password" formcontrolName="password"/>
+				<div *ngIf="registrationform.hasError('required', 'Password') && registrationform.controls['Password'].dirty" class="required">*Password is required.</div>
+				
+				<button (click)="register()">Register</button>
+			
+				<br><div class="span">
+				<span>Already Have Account?</span><a routerLink="/login" class="login">Login Here</a>
+				</div>
+			</form>
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-panel overlay-right">
+                 <img src="assets\images\download (1).png">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+

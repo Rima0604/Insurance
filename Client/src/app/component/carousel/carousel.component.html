@@ -1,0 +1,34 @@
+<br><!-- slideshow.component.html -->
+<div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <div class="imges">
+      <img src="/assets/images/Insurance1.jpg" style="width:100% "> </div>
+      <!-- <div class="text">Caption Text</div> -->
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <div class="imges">
+      <img src="/assets/images/bg7.jpg" style="width:100%"></div>
+      <!-- <div class="text">Caption Two</div> -->
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <div class="imges">
+      <img src="/assets/images/bg1.jpg" style="width:100%"></div>
+      <!-- <div class="text">Caption Three</div> -->
+    </div>
+  
+    <a class="prev" (click)="plusSlides(-1)">❮</a>
+    <a class="next" (click)="plusSlides(1)">❯</a>
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" (click)="currentSlide(1)"></span>
+    <span class="dot" (click)="currentSlide(2)"></span>
+    <span class="dot" (click)="currentSlide(3)"></span>
+  </div>
+  

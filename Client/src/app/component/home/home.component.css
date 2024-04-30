@@ -1,0 +1,28 @@
+.img{
+    margin-top: 30px;
+    height: 400px;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.container1{
+     align-items: center;
+     justify-content: center;
+     margin-left: 100px;
+}
+
+.box{
+    align-content: center;
+    margin-left: 250px;
+    margin-right: 280px;
+    justify-content: center;
+}
+
+/* 
+.component{
+    background: linear-gradient(to right,
+	rgb(69, 141, 230),
+	rgb(45, 206, 221));
+
+} */
+/* .mySlides {display:none;} */

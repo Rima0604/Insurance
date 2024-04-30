@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bike</title>
+</head>
+
+<body>
+    <div class="images">
+        <img src="/assets/images/bike-in.png">
+    </div>
+
+    <div class="container">
+        <div class="slider"></div>
+        <div class="btn">
+            <h2 class="text-center text-1xl text-gray-700 font-bold sm:text-2xl">Bike Insurance</h2>
+        </div>
+
+        <form [formGroup]="bikeForm">
+            <div class="form-section">
+                <div class="bike-box">
+                    <input type="text" formControlName="bikeNumber" class="number ele" placeholder="Enter Bike Registration Number">
+                    <input type="phone" formControlName="mobileNumber" class="phone ele" placeholder="Enter Your Mobile Number">
+                    <input type="email" formControlName="email" class="email ele" placeholder="Enter Your Email">
+                    <input type="text" formControlName="pinCode" class="bike pnum ele" placeholder="Enter Your PinCode">
+                    <div class="text-center">
+                        <button (click)="onSubmit()" type="submit" class="clkbtn">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+   
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+.page {
+  color: white;
+  padding: 0 1rem;
+  background: #f1f5f9;
+}
+
+.page__box {
+  min-height: 120px;
+  background: #062254;
+  margin: 0 -1rem;
+  font-size: 36px;
+}
+
+.page__content {
+  min-height: calc(100vh - 178px);
+  border-radius: 10px;
+  margin-top: -2rem;
+  background: white;
+  color: black;
+  font-size: 2rem;
+}
+
+.page__content-data {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+  
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: space-between; /* Adjust as needed */
+     /* margin-left: 240px;  */
+    margin-right: 100px; 
+
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+    width: calc(24% - 2px); /* Adjust card width as needed */
+    margin-bottom: 5px;
+    
+}
+
+.card3,
+.card4{
+    height: 126px;
+}
+
+.card1 a,
+.card2 a,
+.card3 a,
+.card4 a {
+    display: block;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    color: #333;
+    width: 80%;
+}
+
+.card1 a:hover,
+.card2 a:hover,
+.card3 a:hover,
+.card4 a:hover {
+    background-color: #f8fafc;
+}
+
+.dark .card1 a,
+.dark .card2 a,
+.dark .card3 a,
+.dark .card4 a {
+    background-color: #333;
+    border-color: #4a5568;
+    color: #fff;
+}
+
+.dark .card1 a:hover,
+.dark .card2 a:hover,
+.dark .card3 a:hover,
+.dark .card4 a:hover {
+    background-color: #4a5568;
+}
+
+.card1{
+    color: #77daf9;
+}
+
+.card2{
+    color: #20a8d8;
+}
+.card3{
+    background-color: #ffc107;
+}
+.card4{
+    background-color: #f86c6b;
+}
+
+.card1 h5,
+.card2 h5,
+.card3 h5,
+.card4 h5 {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #333;
+}
+
+.card1 p,
+.card2 p,
+.card3 p,
+.card4 p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+.dark .card1 h5,
+.dark .card2 h5,
+.dark .card3 h5,
+.dark .card4 h5,
+.dark .card1 p,
+.dark .card2 p,
+.dark .card3 p,
+.dark .card4 p {
+    color: #fff;
+}
+

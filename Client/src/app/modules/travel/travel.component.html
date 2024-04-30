@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+
+<body>
+
+    <div class="images">
+        <img src="/assets/images/travel-insurance-policy-with-woman-goes-vector-33866917.jpg" alt="Car Image">  
+    </div>
+
+    <div class="container">
+        <div class="slider"></div>
+        <div class="btn">
+            <h2 class="text-center text-1xl text-gray-700 font-bold sm:text-2xl">Travel Insurance</h2>
+        </div>
+        <form [formGroup]="travelForm">
+        <div class="form-section">
+            <div class="travel-box">
+                <label for="country">Country Name:</label>
+                <select formControlName="countryName" id="country" name="country" required>
+                    <option>Select Country</option>
+                    <option value="Uk">Uk</option>
+                    <option value="Japan">Japan</option>
+                </select>
+                <!-- <input type="text" class="country ele" placeholder="Enter country name"> -->
+                <label for="sdate">Starting Date:</label>
+                <input formControlName="startDate" type="date" id="sdate" name="sdate">
+                <label for="end">Ending Date:</label>
+                <input formControlName="endDate" type="date" id="endate" placeholder="Select your ending date">
+                <div class="text-center">
+                <button (click)="onSubmit()" class="clkbtn"> Submit</button><br>
+                </div>
+            </div>
+        </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

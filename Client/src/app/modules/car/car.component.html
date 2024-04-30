@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car</title>
+</head>
+
+<body>
+
+<div class="images">
+    <img src="/assets/images/Useful-Riders-for-your-Car-Insurance-policy-15-Sept_1-1.jpg" alt="Car Image">  
+</div>
+
+    <div class="container">
+
+        <div class="slider"></div>
+        <div class="btn">
+            <h2 class="text-center text-1xl text-gray-700 font-bold sm:text-2xl">Car Insurance</h2>
+            
+        </div>
+
+        <form [formGroup]="carForm">
+        <div class="form-section">
+            <div class="bike-box">
+                <input type="text" formControlName="carNumber" class="car num1 ele" placeholder="Enter Your Car Register Number">
+                <input type="text" formControlName="mobileNumber" class="phone ele" placeholder="Enter Your Mobile Number">
+                <input type="email" formControlName="email" class="email ele" placeholder="Enter Your Email">
+                <input type="text" formControlName="pinCode" class="car pnum ele" placeholder="Enter Your PinCode">
+
+                <div class="text-center">
+                    <button (click)="onSubmit()" type="submit" class="clkbtn">Submit</button>
+                </div>
+            </div>
+
+        </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+.active{
+    border-bottom: 2px solid#161617;
+    transform: scale(1.1);
+    transition: border-bottom 0.3s ease, color 0.3 transform 00.3s ease;
+} 
+.head{
+    background-image: linear-gradient(to right,
+    rgb(119, 226, 250),
+    rgb(45, 206, 221));
+}

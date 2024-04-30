@@ -1,0 +1,19 @@
+.table{
+
+    display: flex;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    
+}
+.icon-container {
+    font-size: 20px;
+}
+
+.icon-container i {
+    font-size: 24px; 
+    vertical-align: middle; 
+    color: #45c1fb;
+}

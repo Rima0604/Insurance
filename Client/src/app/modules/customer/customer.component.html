@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer</title>
+</head>
+
+<body>
+    <div class="images">
+        <img src="/assets/images/Understand-Life-Insurance-Illustration.png">
+    </div>
+
+    <div class="container">
+
+        <div class="slider"></div>
+        <div class="btn">
+            <h2 class=" text-center text-1xl text-gray-700 font-bold sm:text-2xl">Customer Details</h2>
+        </div>
+        <form [formGroup]="customerForm">
+        <div class="form-section">
+            <div class="customer-box">
+                <input type="text" formControlName="name" class="name ele" placeholder="Enter Your Name">
+                <input type="text" formControlName="mobileNumber" class="phone ele" placeholder="Enter Your PhoneNumber">
+                <input type="email" formControlName="email" class="email ele" placeholder="Enter Your Email">
+                <input type="text" formControlName="zipCode" class="zipcode ele" placeholder="Enter Your ZipCode">
+                <input type="text" formControlName="address" class="Address ele" placeholder="Enter Your Address">
+                <div class="text-center">
+                <button (click)="onSubmit()" class="clkbtn">Submit</button>
+                </div>
+            </div>
+            </div>
+        </form>
+            </div>
+</body>
+</html>

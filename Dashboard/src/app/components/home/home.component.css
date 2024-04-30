@@ -1,0 +1,29 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+mat-drawer {
+  width: 260px;
+}
+mat-drawer-container {
+  height: 100%;
+}
+
+mat-drawer {
+  background: #e3e6ea;
+}
+
+sidenav{
+  position: absolute;
+  
+}
+/* 
+app-header{
+  position: fixed;
+  width: 100%;
+  height: 4rem;
+  top: 0px;
+  z-index: 2;
+} */
